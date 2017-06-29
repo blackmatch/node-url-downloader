@@ -1,4 +1,4 @@
-downloader
+downloader [![Build Status](https://secure.travis-ci.org/blackmatch/downloader.png)](http://travis-ci.org/blackmatch/downloader)
 
 You can download file from url by node.js.
 
