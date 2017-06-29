@@ -1,5 +1,5 @@
 {
-  "name": "downloader",
+  "name": "node-url-downloader",
   "version": "0.1.0",
   "description": "download file from url by node.js",
   "main": "index.js",
