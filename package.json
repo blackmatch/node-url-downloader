@@ -1,0 +1,27 @@
+{
+  "name": "downloader",
+  "version": "0.1.0",
+  "description": "download file from url by node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "node.js",
+    "download",
+    "url"
+  ],
+  "author": "blackmatch <coder.blackmatch@gmail.com>",
+  "homepage": "https://github.com/blackmatch/downloader.git",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^3.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git:github.com/blackmatch/downloader.git"
+  }
+}
