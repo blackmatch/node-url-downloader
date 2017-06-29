@@ -8,6 +8,8 @@ You can download file from url by node.js.
 npm install downloader --save
 ```
 
+>Need node.js version 6.0 or later.
+
 ### Usage
 
 ```js
