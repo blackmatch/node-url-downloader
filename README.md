@@ -1,4 +1,4 @@
-#downloader
+# downloader
 
 [![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
