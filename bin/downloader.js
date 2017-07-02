@@ -3,6 +3,8 @@
 const Downloader = require('../lib/downloader');
 
 const main = function(url, outDir) {
+  console.log(`url: ${url}`);
+  console.log(`outDir: ${outDir}`);
   const download = new Downloader();
   download.get(url, outDir);
 };
