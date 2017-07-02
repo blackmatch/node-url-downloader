@@ -11,4 +11,5 @@ const main = function(url, outDir) {
 
 const url = process.argv[1];
 const outDir = process.argv[2];
+console.log(process.argv);
 main(url, outDir);
