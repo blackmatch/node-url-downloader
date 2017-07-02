@@ -1,6 +1,6 @@
 {
   "name": "node-url-downloader",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "download file from url by node.js",
   "main": "index.js",
   "bin": {
