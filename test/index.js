@@ -1,39 +1,22 @@
-const downloader = require('../lib/downloader');
+const Downloader = require('../lib/downloader');
 
-describe('downloader test', function () {
+describe('downloader', function () {
   this.timeout(5 * 60 * 1000);
-  const url = 'https://github.com/nodejs/node/blob/master/doc/releases.md';
-  it('download a file', function (done) {
-    downloader.get(url, () => {
+  let url = 'https://upload.wikimedia.org/wikipedia/commons/'
+    + 'thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png';
+
+  it('#download normally', (done) => {
+    const download = new Downloader();
+    download.get(url);
+    download.on('done', () => {
       done();
     });
   });
 
-  it('download with config', function (done) {
-    downloader.config({
-      dir: 'downloads/',
-      fileName: 'node.pkg'
-    });
-    downloader.get(url, () => {
-      done();
-    });
-  });
-
-  it('download with progress', function (done) {
-    downloader.config({
-      withProgress: true,
-    });
-    downloader.get(url, () => {
-      done();
-    });
-  });
-
-  it('redownload file test', function (done) {
-    downloader.config({
-      withProgress: true,
-      redownload: true,
-    });
-    downloader.get(url, () => {
+  it('#download with outDir', (done) => {
+    const download = new Downloader();
+    download.get(url, './downloads');
+    download.on('done', () => {
       done();
     });
   });

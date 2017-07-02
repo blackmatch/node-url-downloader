@@ -1,13 +1,12 @@
 #! /usr/bin/env node
 
-const downloader = require('../lib/downloader');
+const Downloader = require('../lib/downloader');
 
-const main = function(url) {
-  downloader.config({
-    withProgress: true,
-  });
-  downloader.get(url);
+const main = function(url, outDir) {
+  const download = new Downloader();
+  download.get(url, outDir);
 };
 
-const url = process.argv[2];
-main(url);
+const url = process.argv[1];
+const outDir = process.argv[2];
+main(url, outDir);

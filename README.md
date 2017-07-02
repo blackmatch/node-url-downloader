@@ -23,31 +23,22 @@ npm install -g node-url-downloader
 ### Usage
 
 ```js
-const downloader = require('node-url-downloader');
+const Downloader = require('node-url-downloader');
 const url = 'https://nodejs.org/dist/v6.11.0/node-v6.11.0.pkg';
-downloader.get(url, () => {
-    // download is finished
+const download = new Downloader();
+download.get(url);
+download.on('done', (dst) => {
+  // download is finished
 });
 ```
 on command line client:
 
 ```js
-downloader [url]
+downloader [url] [outDir]
 
 example:
-downloader https://nodejs.org/dist/v6.11.0/node-v6.11.0.pkg
+downloader https://nodejs.org/dist/v6.11.0/node-v6.11.0.pkg ./downloads
 ```
-
-### Config
-
-```js
-downloader.config({
-  dir: 'downloads/',
-  fileName: 'node.pkg'
-});
-```
-
->You only need to setup once.
 
 ### LICENSE
 MIT
