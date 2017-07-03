@@ -1,7 +1,8 @@
 # node-url-downloader
 
-[![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
 [![Downloads][downloads-image]][downloads-url]
 
 Download file from url by node.js.
@@ -50,3 +51,5 @@ MIT
 [travis-url]: https://travis-ci.org/blackmatch/downloader
 [downloads-image]: http://img.shields.io/npm/dm/node-url-downloader.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/node-url-downloader
+[coveralls-image]: https://img.shields.io/coveralls/blackmatch/downloader.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/blackmatch/downloader
