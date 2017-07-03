@@ -1,10 +1,10 @@
-# downloader
+# node-url-downloader
 
 [![Build status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][downloads-url]
 
-You can download file from url by node.js.
+Download file from url by node.js.
 
 ### Install
 
@@ -18,7 +18,8 @@ If you want to use with command line, you need to install like below:
 npm install -g node-url-downloader
 ```
 
->Need node.js version 6.0 or later.When you install with `-g`,you may need to have root permission with `sudo`.
+>Need node.js version 6.0 or later.
+If you install with `-g`,you may need to have root permission(`sudo`).
 
 ### Usage
 

@@ -7,11 +7,14 @@
     "downloader": "bin/downloader.js"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [
     "node.js",
     "download",
+    "downloader",
     "url"
   ],
   "author": "blackmatch <coder.blackmatch@gmail.com>",
@@ -23,8 +26,11 @@
     "progress": "^2.0.0"
   },
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "eslint": "^4.1.1",
-    "mocha": "^3.4.2"
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "mocha-lcov-reporter": "^1.3.0"
   },
   "repository": {
     "type": "git",
