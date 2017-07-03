@@ -1,6 +1,6 @@
 {
   "name": "node-url-downloader",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "download file from url by node.js",
   "main": "index.js",
   "bin": {
@@ -26,6 +26,7 @@
     "progress": "^2.0.0"
   },
   "devDependencies": {
+    "chai": "^4.0.2",
     "coveralls": "^2.13.1",
     "eslint": "^4.1.1",
     "istanbul": "^0.4.5",

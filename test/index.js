@@ -1,3 +1,8 @@
+const chai = require('chai');
+// const assert = chai.assert;    // Using Assert style
+const expect = chai.expect;    // Using Expect style
+// const should = chai.should();  // Using Should style
+
 const Downloader = require('../lib/downloader');
 
 describe('downloader', function () {
@@ -20,4 +25,13 @@ describe('downloader', function () {
       done();
     });
   });
+
+  it('#bad url, should throw error', () => {
+    const download = new Downloader();
+    const badUrl = 'htp://test.com';
+    expect(function() {
+      download.get(badUrl);
+    }).to.throw('the url is invalid!');
+  });
+
 });
